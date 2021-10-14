@@ -1,1 +1,1 @@
-# Here will be the link: 
+# Here is the site: http://julek.geminidesign.pl
