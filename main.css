@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
 :root {
     --clr-neon:hsl(145, 56%, 46%);
 } 
@@ -6,7 +8,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -31,6 +32,7 @@ nav {
     padding-top: 10px;
     padding-left: 2%;
     text-transform: uppercase;  
+    font-family: 'Poppins', sans-serif;
 }
 
 span {
@@ -42,6 +44,7 @@ span {
     background: #34b86b;
     padding: 10px 30px;
     border-bottom-left-radius: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -108,8 +111,9 @@ span {
 
 .left-col img {
     width: 80%;
+    height: 80%;
     cursor: pointer;
-    border-radius: 20%;
+    border-radius: 10vh;
     transition: transform 0.5s;
     box-shadow: inset 0 0 5em 0 var(--clr-neon), 0 0 5em 0 var(--clr-neon);
 }
@@ -124,23 +128,27 @@ span {
     font-size: 55px;
     font-weight: 700;
     justify-content: center;
+    font-family: 'Fira Code', monospace;
+    margin-bottom: 20px;
 }
 
 .right-col p {
+    margin-top: 5px;
     max-width: 800px;
+    font-family: 'Fira Code', monospace;
 }
 
 .social-icon {
     display: flex;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 
 
 .social-icon .icon {
-    width: 100px;
-    height: 100px;
-    background: white;
+    width: 80px;
+    height: 80px;
+    background: #34b86b;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -164,8 +172,8 @@ span {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    background: #34b86b;
+    height: 80px;
+    background: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -179,7 +187,7 @@ span {
 }
 
 .icon:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); 
 }
 
 .obecny {
@@ -212,4 +220,5 @@ span {
 
 .kod {
     color: #34b86b;
+    font-family: 'Fira Code', monospace;
 }
