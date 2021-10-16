@@ -113,11 +113,10 @@ span {
     width: 80%;
     height: 80%;
     cursor: pointer;
-    border-radius: 10vh;
+    border-radius: 20%;
     transition: transform 0.5s;
     box-shadow: inset 0 0 5em 0 var(--clr-neon), 0 0 5em 0 var(--clr-neon);
 }
-
 
 
 .left-col img:hover {
@@ -130,6 +129,10 @@ span {
     justify-content: center;
     font-family: 'Fira Code', monospace;
     margin-bottom: 20px;
+}
+
+.right-col span {
+    font-weight: 500;
 }
 
 .right-col p {
@@ -221,4 +224,11 @@ span {
 .kod {
     color: #34b86b;
     font-family: 'Fira Code', monospace;
+}
+
+@media (max-width: 798px) {
+
+    .logo {
+        display: none;
+    }
 }
