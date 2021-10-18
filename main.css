@@ -35,7 +35,7 @@ nav {
     font-family: 'Poppins', sans-serif;
 }
 
-span {
+.dologo {
     color: black;
 }
 
@@ -68,8 +68,13 @@ span {
     color: black;
 }
 
+.nieobecny:hover > .nawias {
+     color: black;
+}
+
 .nawias {
     color: #227846;
+    transition: 0.5s ease;
 }
 
 .left-sidebar {
