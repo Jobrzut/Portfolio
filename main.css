@@ -8,20 +8,27 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.header {
+.light {
     min-height: 100vh;
     width: 100%;
-    background: #000;
-    color: #fff;
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     position: relative;
-    z-index: 1;
 }
 
 .logo {
@@ -33,10 +40,12 @@ nav {
     padding-left: 2%;
     text-transform: uppercase;  
     font-family: 'Poppins', sans-serif;
+    z-index: 3;
 }
 
 .dologo {
     color: black;
+    z-index: 3;
 }
 
 .nav-link {
@@ -45,6 +54,7 @@ nav {
     padding: 10px 30px;
     border-bottom-left-radius: 18px;
     font-family: 'Poppins', sans-serif;
+
 }
 
 
@@ -53,7 +63,6 @@ nav {
     list-style: none;
     display: inline-block;
     padding: 10px 25px;
-
 }
 
 
@@ -185,7 +194,6 @@ nav {
     left: 0;
     width: 100%;
     height: 80px;
-    background: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -200,6 +208,7 @@ nav {
 
 .icon:hover {
     transform: translateY(-5px); 
+    background: white;
 }
 
 .obecny {
@@ -234,6 +243,20 @@ nav {
     color: #34b86b;
     font-family: 'Fira Code', monospace;
 }
+
+.theme {
+    width: 45px;
+    height: 45px;
+    background: #ffb703;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.theme i {
+    font-size: 20px;
+}
+
 
 @media (max-width: 798px) {
 
