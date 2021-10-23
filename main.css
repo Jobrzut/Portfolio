@@ -168,7 +168,7 @@ nav {
     position: relative;
     margin-right: 20px;
     overflow: hidden;
-    transition: transfom 0.5s;
+    transition: 0.5s;
 }
 
 
@@ -191,7 +191,7 @@ nav {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: transform 0.5s;
+    transition: 0.5s;
 }
 
 .icon a:hover {
