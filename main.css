@@ -262,14 +262,6 @@ nav {
     color: black;
 }
 
-.bxs-brightness-half {
-    color: black;
-}
-
-.bx-brightness-half {
-    color: white;
-}
-
 @media (max-width: 798px) {
 
     .logo {

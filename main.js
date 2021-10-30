@@ -15,12 +15,12 @@ const theme = () => { //zmienianie klasy
     if (header.classList.contains("dark")) {
         header.classList.replace("dark", "light")
         localStorage.setItem("theme", "light")
-        themeIcon.innerHTML = '<i class="bx bx-brightness-half"></i>'
+        themeIcon.innerHTML = '<i style="color: white;" class="bx bx-brightness-half"></i>'
         themeIcon.style.background = '#000000' //ciemny
     } else {
         header.classList.replace("light", "dark")
         localStorage.setItem("theme", "dark")
-        themeIcon.innerHTML = '<i class="bx bxs-brightness-half"></i>'
-        themeIcon.style.background = '#ffffff' //jasny
+        themeIcon.innerHTML = '<i style="color: black;" class="bx bxs-brightness-half"></i>'
+        themeIcon.style.background = '#fff' //jasny
     }
 }
