@@ -159,6 +159,10 @@ nav {
     font-family: 'Fira Code', monospace;
 }
 
+.right-col * {
+    -webkit-backface-visibility: hidden;
+}
+
 .social-icon {
     display: flex;
     margin-top: 35px;
@@ -247,7 +251,7 @@ nav {
 .theme {
     width: 45px;
     height: 45px;
-    background: #ffb703;
+    background: #ffffff;
     outline: none;
     border: none;
     border-radius: 10px;
@@ -255,8 +259,16 @@ nav {
 
 .theme i {
     font-size: 20px;
+    color: black;
 }
 
+.bxs-brightness-half {
+    color: black;
+}
+
+.bx-brightness-half {
+    color: white;
+}
 
 @media (max-width: 798px) {
 
