@@ -54,7 +54,6 @@ nav {
     padding: 10px 30px;
     border-bottom-left-radius: 18px;
     font-family: 'Poppins', sans-serif;
-
 }
 
 
@@ -82,8 +81,9 @@ nav {
 }
 
 .nawias {
-    color: #227846;
+    color: #185532;
     transition: 0.5s ease;
+    cursor: default;
 }
 
 .left-sidebar {
@@ -255,6 +255,8 @@ nav {
     outline: none;
     border: none;
     border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .theme i {
