@@ -5,6 +5,7 @@
     --clr-neon:hsl(145, 56%, 46%);
 } 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -264,9 +265,68 @@ nav {
     color: black;
 }
 
-@media (max-width: 798px) {
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color : #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
 
+.hamburger:focus {
+    outline: none;
+}
+
+@media (max-width: 1000px) {
+    .nav-ul {
+        display: none;
+    }
+
+    nav {
+        float: right;
+    }
+    
     .logo {
         display: none;
+    }
+
+    .left-col {
+        display: none;
+    }
+
+    .right-col {
+        left: 10%;
+        max-width: 85%;
+    }
+
+    .right-col h1 {
+        font-size: 30px;
+        margin-right: 0;
+    }
+    
+    .right-col p {
+        font-size: 15px;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+
+    .toggle {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background: url('assety/menu.jpg');
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .toggle.active {
+        background: url('assety/close.png');
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
     }
 }
