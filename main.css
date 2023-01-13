@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .light {
     min-height: 100vh;
     width: 100%;
@@ -284,6 +289,7 @@ nav {
 
     nav {
         float: right;
+        z-index: 100;
     }
     
     .logo {
@@ -296,7 +302,7 @@ nav {
 
     .right-col {
         left: 10%;
-        max-width: 85%;
+        
     }
 
     .right-col h1 {
@@ -306,10 +312,21 @@ nav {
     
     .right-col p {
         font-size: 15px;
+        max-width: 90%;
     }
 
     .left-sidebar {
         display: none;
+    }
+
+    .social-icon .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .row{
+        margin: 0;
+        padding: 0;
     }
 
     .toggle {
@@ -328,5 +345,6 @@ nav {
         background-repeat: no-repeat;
         background-size: 25px;
         background-position: center;
+        float: ;
     }
 }

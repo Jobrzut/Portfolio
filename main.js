@@ -27,9 +27,20 @@ const theme = () => { //zmienianie klasy
 
 // dzialanie menu
 const menuToggle = document.querySelector('.toggle')
-const showcase = document.querySelector('.showcase') 
 
 menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active')
-    showcase.classList.toggle('active')
+    
+    const element = document.querySelector('.nav-ul');
+
+    //Wylaczanie menu
+    if (menuToggle.classList.contains("active")) {
+        element.style.display = "none";
+        menuToggle.classList.remove('active')
+        
+    //Wlaczanie menu
+    } else {
+        menuToggle.classList.toggle('active')
+        element.style.display = "grid";
+    }
+    
 })
